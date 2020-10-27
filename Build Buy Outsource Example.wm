@@ -1,0 +1,38 @@
+title Online Photo Storage
+
+style wardley
+
+component Customer [1, 0.45]
+component Online Image Manipulation [.98, 0.34] (build) label [-75, 1]
+component Online Photo Storage [.91, 0.37] (build) label [-44, 23]
+
+Customer->Online Image Manipulation
+Customer->Online Photo Storage
+
+
+component Print [.88, 0.6] (buy)
+Customer->Print
+
+
+component Web Site [.82, 0.65] (buy)
+Customer->Web Site
+Online Photo Storage->Web Site 
+
+component CRM [0.68, 0.68] (buy)
+Web Site->CRM
+
+component Platform [0.5, 0.58] (buy)
+Web Site->Platform 
+
+component Compute [0.35, 0.69] (buy)
+Platform->Compute
+CRM->Compute
+
+component Data Centre [0.15, 0.58] (buy)
+Compute->Data Centre
+CRM->Compute
+
+component Power [0.1, 0.9] (outsource)
+Data Centre->Power
+Compute->Power 
+

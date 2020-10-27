@@ -1,0 +1,67 @@
+title Pioneer, Settler and Town Planner
+style wardley 
+anchor Customer [0.94, 0.35]
+
+component Online Image Manip [0.86, 0.19] label [-15, 27]
+component Online Image Storage [0.78, 0.34] label [-31, 24]
+component Print [0.84, 0.55] label [22, 2]
+component Web Site [0.71, 0.57] label [23, 2]
+component CRM [0.57, 0.62] label [16, -12]
+component Platform [0.40, 0.44] label [28, 0]
+component Compute [0.22, 0.64] label [24, -3]
+component Data Centre [0.13, 0.43] label [3, 25]
+component Power [0.06, 0.79] label [25, -4]
+
+// PST
+pioneers [0.90, 0.16, 0.68, 0.38]
+settlers [0.88, 0.50, 0.80, 0.70]
+settlers [0.74, 0.51, 0.54, 0.71]
+settlers [0.45, 0.4, 0.35, 0.55]
+settlers [0.27, 0.60, 0.17, 0.72]
+settlers [0.18, 0.37, 0.05, 0.57]
+townplanners [0.11, 0.75, 0.01, 0.88]
+
+// Method
+build Online Image Manip
+build Online Image Storage
+buy Print
+buy Web Site 
+buy CRM
+buy Platform
+buy Compute
+buy Data Centre 
+outsource Power
+
+Customer->Online Image Manip
+Customer->Online Image Storage
+Customer->Print
+Customer->Web Site
+Online Image Manip->Online Image Storage
+Online Image Storage->Web Site
+
+Print->Web Site
+Web Site->CRM
+Web Site->Platform
+CRM->Compute
+Platform->Compute
+Compute->Data Centre
+Compute->Power
+Data Centre->Power
+
+
+pioneers [0.95, 0.83, 0.89, 0.98]
+settlers [0.88, 0.83, 0.82, 0.98] 
+townplanners [0.81, 0.83, 0.75, 0.98]
+
+note Pioneers [0.91, 0.84]
+note Settlers [0.84, 0.84]
+note Town Planners [0.77, 0.84]
+
+
+// Team Notes
+note Team 1 [0.91, 0.20]
+note Team 2 [0.91, 0.54]
+note Team 3 [0.76, 0.62]
+note Team 4 [0.46, 0.41]
+note Team 5 [0.19, 0.44]
+note Team 6 [0.30, 0.65]

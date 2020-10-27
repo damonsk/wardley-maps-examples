@@ -1,0 +1,24 @@
+title Evolution of Work
+style wardley
+
+anchor Business [0.95, 0.28]
+
+component Human Capital [0.84, 0.23] label [-95, -10]
+component Capital [0.85, 0.33] label [4, -9]
+component Automation [0.29, 0.50] label [2, -10]
+component Systematization [0.45, 0.24] label [-94, -16]
+component Craft [0.67, 0.21] label [-41, -9]
+component AI [0.08, 0.55] label [2, -10]
+
+pipeline Automation [0.15, 0.75]
+pipeline AI [0.15, 0.75]
+pipeline Systematization [0.15, 0.4]
+pipeline Craft [0.08, 0.25]
+
+Business->Human Capital
+Business->Capital
+Human Capital->Craft
+Craft->Systematization
+Capital->Automation
+Systematization->AI
+Automation->AI

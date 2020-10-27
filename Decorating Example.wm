@@ -1,0 +1,12 @@
+title Decorating Example
+anchor Customer [0.99,0.5]
+Customer->Happiness
+buy Happiness
+component Happiness [0.80, 0.26] inertia
+evolve Happiness 0.9 (build) 
+
+component Foo [0.57, 0.11]
+evolve Foo 0.8 (buy) 
+
+component AppStore [0.39, 0.52]
+evolve AppStore 0.75 (market)

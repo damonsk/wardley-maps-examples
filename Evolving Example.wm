@@ -1,0 +1,13 @@
+title Tea Shop
+anchor Business [0.95, 0.63]
+anchor Public [0.95, 0.78]
+component Cup of Tea [0.80, 0.58]
+component Cup [0.69, 0.62] inertia 
+evolve Cup 0.9
+
+component Kettle [0.32, 0.33] inertia label [-48, -13]
+Cup of Tea->Kettle
+Business->Cup of Tea
+Public->Cup of Tea
+Cup of Tea->Cup
+style wardley

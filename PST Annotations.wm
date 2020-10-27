@@ -1,0 +1,10 @@
+// PST Legend Top Right
+pioneers [0.95, 0.83, 0.89, 0.98]
+settlers [0.88, 0.83, 0.82, 0.98] 
+townplanners [0.81, 0.83, 0.75, 0.98]
+
+note Pioneers [0.91, 0.84]
+note Settlers [0.84, 0.84]
+note Town Planners [0.77, 0.84]
+
+style wardley

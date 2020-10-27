@@ -1,0 +1,23 @@
+title Tea Shop
+component Business [1, 0.65]
+component Public [1, 0.79]
+component Cup of Tea [0.8, 0.72]
+component Cup [0.7, 0.88]
+component Tea [0.6, 0.83]
+component Hot Water [0.47, 0.8]
+component Water [0.35, 0.83]
+component Kettle [0.3, 0.3] inertia
+component Staff [0.6, 0.72]
+component Power [0.1, 0.8]
+Business->Cup of Tea
+Public+'+$0.55'<>Cup of Tea
+Cup of Tea+'+$0.05'<>Cup
+Cup of Tea+'+$0.15'<>Tea
+Cup of Tea+'+$0.20'<>Hot Water
+Cup of Tea+'$0.10'<>Staff
+Hot Water+'+$0.05'<>Water
+Hot Water+'+$0.10'<Kettle 
+Kettle+'+$0.05'<Power
+
+style wardley 
+evolve Kettle 0.75

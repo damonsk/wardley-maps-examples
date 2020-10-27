@@ -1,0 +1,21 @@
+title Battle for payments
+
+anchor Client [0.94, 0.56]
+component User Experience [0.81, 0.67] label [23, -14]
+component Application [0.62, 0.68] label [11, 10]
+component Payments [0.53, 0.45] label [-74, -2]
+market AppStore [0.32, 0.65] label [30, 0]
+
+Client->User Experience
+User Experience->Application
+Application->AppStore
+Application->Payments
+Payments->AppStore
+
+note Market [0.27, 0.04]
+market x [0.28, 0.14] label [-168, 21]
+
+style wardley
+note Source: [0.05, 0.01]
+note joapen.com/blog/2020/10/02/wardley-maps-the-payment-war-in-the-mobile-app-ecosystem/ [0.02, 0.01]
+//src: http://joapen.com/blog/2020/10/02/wardley-maps-the-payment-war-in-the-mobile-app-ecosystem/

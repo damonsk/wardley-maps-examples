@@ -1,0 +1,11 @@
+title Submap Example
+
+
+component Bar [0.65, 0.58]
+
+submap Foo [0.83, 0.50] url(fooUrl)
+url fooUrl [https://onlinewardleymaps.com/#clone:qu4VDDQryoZEnuw0ZZ]
+
+Foo->Bar
+
+style wardley
